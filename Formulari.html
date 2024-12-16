@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecció treballador</title>
+    <link rel="stylesheet" href="CSS/iteracio1css.css">
+</head>
+<body>
+    <header>
+        <h1><b>SELECCIÓ DE TREBALLADOR</b></h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="clase.html">Classes</a></li>
+            <li><a href="galeria.html">Galeria d'imatges</a></li>
+            <li><a href="Formulari.html">Postulació</a></li>
+        </ul>
+    </header>
+    </nav>
+    <main id="main">
+        <form>
+            <section id="Dades">
+                <fieldset>
+                    <legend>Dades personals</legend>
+        
+                    <label for="nom">Nom</label><br>
+                    <input type="text" id="nom" name="nombre" placeholder="Introdueixi el seu nom." required><br>
+                    
+                    <label for="Cognom">Cognoms</label><br>
+                    <input type="text" id="Cognoms" name="Cognoms" placeholder="Introdueixi els seus cognoms." required><br>
+    
+                    <label for="fecha">Data de naixement</label><br>
+                    <input type="date" id="data" name="data naixement" required><br>
+                   
+                    <label for="DNI">DNI</label><br>
+                    <input type="text" id="DNI" name="DNI" placeholder="Introdueixi el seu DNI." required><br>
+                   
+                    <label for="Color">Color favorito</label><br>
+                    <input type="text" id="Color" name="Color" placeholder="Introdueixi el seu color favorit."><br>
+                    
+                    
+                    <label for="Email">Email</label><br>
+                    <input type="email" id="Email" name="Email" placeholder="Introdueixi el seu email." required><br>
+    
+                    <label>Sexe</label><br>
+                    <input type="radio" name="sexe">Home<br>
+                    <input type="radio" name="sexe">Dona<br>
+    
+                    <label for="estudis">Estudis</label><br>
+                    <select name="estudis" id="estudis"><br>
+                        <optgroup label="Ciències Socials">
+                            <option value="psicologia">Psicologia</option>
+                            <option value="sociologia">Sociologia</option>
+                            <option value="economia">Economia</option>
+                        </optgroup>
+                          
+                        <optgroup label="Ciències de la Naturalesa">
+                            <option value="biologia">Biologia</option>
+                            <option value="quimica">Química</option>
+                            <option value="fisica">Física</option>
+                            <option value="geologia">Geología</option>
+                        </optgroup>
+                          
+                        <optgroup label="Ingeniería">
+                            <option value="informatica">Enginyeria Informàtica</option>
+                            <option value="electrica">Enginyeria Elèctrica</option>
+                            <option value="industrial">Enginyeria Industrial</option>
+                        </optgroup>
+                          
+                        <optgroup label="Art i Humanitats">
+                            <option value="literatura">Literatura</option>
+                            <option value="historia">Història</option>
+                            <option value="filosofia">Filosofia</option>
+                            <option value="musica">Música</option>
+                        </optgroup>
+                          
+                        <optgroup label="Negocis y Administració">
+                            <option value="administracio">Administració de Empreses</option>
+                            <option value="contabilitat">Contabilitat</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="finançes">Finançes</option>
+                        </optgroup>
+                        <option value="altre">Altre</option>
+                    </select>
+                </fieldset>
+            </section>
+            <section id="mes">
+                <fieldset>
+                    <legend>Dades adicionals</legend>
+
+                    <label for="explicacio">Explicació</label><br>
+                    <textarea id="explicacio" name="explicacio" rows="10" cols="50" placeholder="Fes una breu explicació sobre perquè hauríem d'escollir-te." required></textarea><br>
+
+                    <label for="foto">Seleccioni una fotografia:</label><br>
+                    <input type="file" id="foto" name="foto" accept="image/*" required><br>
+                    <p>Seleccioneu un fitxer d'imatge (JPG, PNG).</p>
+                </fieldset>
+            </section>
+            <section id="politica">
+                <fieldset>
+                    <legend>Política de privadesa de l'empresa</legend>
+                    
+                    <label>
+                        <input type="checkbox" id="Politica" name="politica_privadesa" required>
+                        <p>He llegit i accepto la política de privadesa.</p>
+                    </label>
+                    
+                </fieldset>
+            </section>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+</body>
+<footer>
+    <p>&copy; 2024 Eric Romero. Tots els drets reservats.</p>
+    <p>Contacte: <a href="mailto:contacte@insjoaquimmir.cat">eromerog@insjoaquimmir.cat</a></p>
+</footer>
+</html>
